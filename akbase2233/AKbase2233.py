@@ -29,7 +29,7 @@
 
     @MyBlog: http://www.kuture.com.cn
     @author  Created by Kuture on 2020/9/21
-    @version 0.1.2 2020/9/21 Creation()
+    @version 0.1.5 2020/9/21 Creation()
     
     @Copyright © 2020年 Mr.Li All rights reserved
 """
@@ -177,7 +177,13 @@ class SecrecSheet(object):
              'k'],
             ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'Y', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
              'X',
-             'K']
+             'K'],
+            ['0', '1', '2', '3', '5', '6', '7', '8', '9', 'Z', 'Y', 'X', 'W', 'V', 'U', 'T', 'S', 'R', 'Q', 'P', 'O',
+             'N', 'M',
+             'L'],
+            ['z', '9', 'y', '8', 'x', '7', 'w', '6', 'v', '5', 'u', '3', 't', '2', 's', '1', 'r', 'q', 'p', 'o', 'n',
+             'm', 'k',
+             'l']
         ]
 
         self._number_sheet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
@@ -186,8 +192,8 @@ class SecrecSheet(object):
                         'p',
                         'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '+', '/', '=']
 
-        self._rand_encrypt_dict = {'0': 'k', '1': 'u', '2': 't', '3': 'U'}
-        self._rand_decrypt_dict = {'k': '0', 'u': '1', 't': '2', 'U': '3'}
+        self._rand_encrypt_dict = {'0': 'k', '1': 'u', '2': 't', '3': 'U', '4': 'R', '5': 'S'}
+        self._rand_decrypt_dict = {'k': '0', 'u': '1', 't': '2', 'U': '3', 'R': '4', 'S': '5'}
 
 
 class base2233(SecrecSheet):
@@ -287,7 +293,7 @@ class base2233(SecrecSheet):
 
 if __name__ == '__main__':
 
-    ak2233 = AKbase2233()
+    ak2233 = base2233()
 
     input_str = 'www.kuture.com.cn'
     print('{} Input: {}'.format(len(input_str), input_str))

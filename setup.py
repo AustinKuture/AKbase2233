@@ -17,7 +17,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "akbase2233",
-    version = "0.1.3",
+    version = "0.1.4",
     keywords = ("pip", "akbase2233", "base", "timetool", "kuture", "encrypt", "decrypt", "base2233", "akbase"),
     description = "use you self password table, encrypt and decrypt you content",
     long_description = "akbase2233 可以使用自己的密码表进行内容的加密与解密，其中最主要的特点是加密结果不是唯一的。\n"
